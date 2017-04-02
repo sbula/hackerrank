@@ -1,7 +1,0 @@
-package algorithms.dynamicProgramming;
-
-public class Equal {
-    public static void main(String[] args) {
-    	
-    }
-}

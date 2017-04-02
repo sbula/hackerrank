@@ -1,7 +1,0 @@
-package algorithms.gameTheory;
-
-public class PokerNim {
-    public static void main(String[] args) {
-    	
-    }
-}
