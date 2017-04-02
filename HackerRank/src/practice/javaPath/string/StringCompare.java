@@ -1,4 +1,4 @@
-package javaPath.string;
+package practice.javaPath.string;
 
 import java.util.Scanner;
 

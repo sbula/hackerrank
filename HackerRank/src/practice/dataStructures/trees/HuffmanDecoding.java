@@ -1,4 +1,4 @@
-package dataStructures.trees;
+package practice.dataStructures.trees;
 
 public class HuffmanDecoding {
 	// you only have to complete the function given below.  

@@ -1,4 +1,4 @@
-package daysOfStatistics;
+package practice.daysOfStatistics;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

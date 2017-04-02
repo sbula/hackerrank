@@ -1,4 +1,4 @@
-package algorithms.constructiveAlgorithms;
+package practice.algorithms.constructiveAlgorithms;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package javaPath.introduction;
+package practice.javaPath.introduction;
 
 public class Welcome {
 

@@ -1,4 +1,4 @@
-package daysOfStatistics;
+package practice.daysOfStatistics;
 
 public class CentrealLimitTheoremI {
 	public static void main(String[] args) {

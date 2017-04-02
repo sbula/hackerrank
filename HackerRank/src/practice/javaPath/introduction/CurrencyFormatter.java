@@ -1,4 +1,4 @@
-package javaPath.introduction;
+package practice.javaPath.introduction;
 
 import java.text.NumberFormat;
 import java.util.Locale;

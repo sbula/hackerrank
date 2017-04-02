@@ -1,4 +1,4 @@
-package algorithms.string;
+package practice.algorithms.string;
 
 import java.util.Scanner;
 

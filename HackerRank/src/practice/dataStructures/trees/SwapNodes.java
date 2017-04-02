@@ -1,4 +1,4 @@
-package dataStructures.trees;
+package practice.dataStructures.trees;
 
 import java.util.ArrayList;
 import java.util.HashMap;

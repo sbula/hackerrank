@@ -1,4 +1,4 @@
-package dataStructures.balancedTrees;
+package practice.dataStructures.balancedTrees;
 
 public class SelfBalancingTree {
 	static class Node {

@@ -1,4 +1,4 @@
-package algorithms.graphTheory;
+package practice.algorithms.graphTheory;
 
 import java.util.ArrayList;
 import java.util.HashMap;

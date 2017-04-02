@@ -1,4 +1,4 @@
-package algorithms.gameTheory;
+package practice.algorithms.gameTheory;
 
 import java.util.Scanner;
 

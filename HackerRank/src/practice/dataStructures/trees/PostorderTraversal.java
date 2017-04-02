@@ -1,4 +1,4 @@
-package dataStructures.trees;
+package practice.dataStructures.trees;
 
 public class PostorderTraversal {
 	// you only have to complete the function given below.  
