@@ -14,7 +14,7 @@ public class AppleAndOranges {
         int n = in.nextInt();
         
         int apples = 0;
-        for(int apple_i=0; apple_i < m; apple_i++){
+        for(int apple_i=0; apple_i < m; apple_i++) {
         	int fallingApple = appleTree + in.nextInt();
             if(houseL <= fallingApple && fallingApple <= houseR) {
             	apples++;
@@ -22,7 +22,7 @@ public class AppleAndOranges {
         }
 
         int oranges = 0;
-        for(int orange_i=0; orange_i < n; orange_i++){
+        for(int orange_i=0; orange_i < n; orange_i++) {
         	int fallingOranges = orangeTree + in.nextInt();
             if(houseL <= fallingOranges && fallingOranges <= houseR) {
             	oranges++;
