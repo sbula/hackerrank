@@ -1,0 +1,11 @@
+package javaPath.string;
+
+import org.junit.Test;
+import org.junit.Assert;
+
+public class TestAnagrams {
+	@Test
+	public void test001() {
+		Assert.assertTrue(Anagrams.isAnagram("anagram", "margana"));
+	}
+}

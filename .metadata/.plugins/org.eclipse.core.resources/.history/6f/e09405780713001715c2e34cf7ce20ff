@@ -1,0 +1,16 @@
+package daysOfStatistics;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class GeometricDistributionI {
+    private static DecimalFormat df3 = new DecimalFormat(".###");
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		double defectProba = (double)in.nextInt()/(double)in.nextInt();
+		int firstDefect = in.nextInt();
+		in.close();
+	}
+
+
+}

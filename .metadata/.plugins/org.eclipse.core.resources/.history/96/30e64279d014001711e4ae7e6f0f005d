@@ -1,0 +1,10 @@
+package javaPath.bigNumber;
+
+import java.util.Scanner;
+
+public class BigInt {
+    public static void main(String[] args) {
+    	Scanner in = new Scanner(System.in);
+    	new java.math.BigInteger(in.nextLine());
+    }
+}

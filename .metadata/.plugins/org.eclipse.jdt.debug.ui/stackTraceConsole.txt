@@ -1,0 +1,3 @@
+        String india = NumberFormat.getCurrencyInstance(new Locale("India")).format(payment);
+        String china = NumberFormat.getCurrencyInstance(Locale.CHINA).format(payment);
+        String france = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(payment);

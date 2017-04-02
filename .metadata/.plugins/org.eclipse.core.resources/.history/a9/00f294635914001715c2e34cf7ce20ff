@@ -1,0 +1,22 @@
+package algorithms.greedy;
+
+import java.util.Scanner;
+
+public class MinAbsDiff {
+
+    public static void main(String[] args) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+
+        Scanner in = new Scanner(System.in);
+        int nbr = in.nextInt();
+        for (int i=0; i<nbr; i++) {
+        	int n = in.nextInt();
+        	if (n<min) min = n;
+        	if (n>max) max = n;
+        }
+        in.close();
+        
+        System.out.println(Math.abs(max-min));
+    }
+}

@@ -1,0 +1,34 @@
+package dataStructures.trees;
+
+public class HuffmanDecoding {
+	// you only have to complete the function given below.  
+	// Node is defined as  
+
+	class Node {
+		public  int frequency; // the frequency of this tree
+		public  char data;
+		public  Node left, right;
+	}
+
+	void decode(String S ,Node root) {
+		Node myNode = root;
+		for (int i=0; i<S.length(); i++) {
+			Node tmpNode = nextNode(myNode, S.charAt(i));
+			if (tmpNode == null) {
+				System.out.print(myNode.data);
+				myNode = nextNode(root, S.charAt(i));
+			} else {
+				myNode = tmpNode;
+			}
+		}
+		
+	}
+	
+	private Node nextNode(Node root, char direction) {
+		if (direction == '0') return root.left;
+		if (direction == '1') return root.right;
+		return null;
+			
+	}
+
+}

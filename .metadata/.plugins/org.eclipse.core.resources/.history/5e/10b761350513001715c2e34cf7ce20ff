@@ -1,0 +1,14 @@
+package daysOfStatistics;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class GeometricDistributionI {
+	Scanner in = new Scanner(System.in);
+	int rejectPerc = in.nextInt();
+	int quant = in.nextInt();
+	in.close();
+
+}

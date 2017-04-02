@@ -1,0 +1,43 @@
+package dataStructures.trees;
+
+import dataStructures.trees.LevelOrderTraversal.Node;
+
+public class BinarySearchTreeInsertion {
+	// you only have to complete the function given below.  
+	// Node is defined as  
+    
+    class Node {
+       int data;
+       Node left;
+       Node right;
+   }
+
+	static Node Insert(Node root,int value) {
+		Node newNode  = new Node();
+		newNode.data = value;
+		newNode.left = null;
+		newNode.right = null;
+		if (root == null) {
+			return newNode;
+		}
+		Node travNode = root;
+		while (travNode != null) {
+			if (value < travNode.data) {
+				if (travNode.left == null) {
+					travNode.left = newNode;
+					return root;
+				}
+				travNode = travNode.left;
+
+			} else {
+				if (travNode.right == null) {
+					travNode.right = newNode;
+					return root;
+				}
+				travNode = travNode.right;
+			}
+		}
+
+		return root;
+	}
+}

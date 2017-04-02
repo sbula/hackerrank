@@ -1,0 +1,35 @@
+package dataStructures.trees;
+
+import java.util.Scanner;
+
+public class SwapNodes {
+	private class Node {
+		private final int date;
+		private Node left, right;
+		
+		public Node(int date) {
+			super();
+			this.date = date;
+		}
+		
+		public void swap() {
+			Node tmp = left;
+			left = right;
+			right = tmp;
+		}
+		
+		public void inorderTraversal() {
+			if (left != null) left.inorderTraversal();
+			System.out.print(date + " ");
+			if (right != null) right.inorderTraversal();
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		
+		
+		in.close();
+	}
+}

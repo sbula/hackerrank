@@ -1,0 +1,77 @@
+package dataStructures.trees;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class SwapNodes {
+	private static class Node {
+		private final int date;
+		private Node left, right;
+
+		public Node(int date) {
+			super();
+			this.date = date;
+		}
+
+		public void setNodes (Node leftNode, Node rightNode) {
+			left = leftNode;
+			right = rightNode;
+		}
+
+		public void swap() {
+			Node tmp = left;
+			left = right;
+			right = tmp;
+		}
+
+		public void inorderTraversal() {
+			if (left != null) left.inorderTraversal();
+			System.out.print(date + " ");
+			if (right != null) right.inorderTraversal();
+		}
+	}
+
+	public static void main(String[] args) {
+		Map<Integer, List<Node>> depthNodes = new HashMap<Integer, List<Node>>();
+
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+
+		Queue<Node> nodesQueue = new LinkedList<Node>();
+		Node root = new Node(1);
+		{
+			List<Node> nodeList = new ArrayList<Node>();
+			nodeList.add(root);
+			depthNodes.put(1, nodeList);
+			nodesQueue.add(root);
+		}
+		for (int i=0; i<(N-1)/2; i++) {
+			Node leftNode = new Node(in.nextInt());
+			Node rightNode = new Node(in.nextInt());
+			Node parent = nodesQueue.poll();
+			parent.setNodes(leftNode, rightNode);
+
+			List<Node> newNodeList = (depthNodes.containsKey(parent.date + 1)) ? depthNodes.get(parent.date + 1) : new ArrayList<Node>();
+			depthNodes.put(parent.date + 1, newNodeList);
+		}
+
+		int S =  in.nextInt();
+		for (int i=0; i<S; i++) {
+			List<Node> list = depthNodes.get(S);
+			root.inorderTraversal();
+			for (Node myNode : list) {
+				myNode.swap();
+			}
+			root.inorderTraversal();
+		}
+
+		in.close();
+
+		root.inorderTraversal();
+	}
+}

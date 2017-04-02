@@ -1,0 +1,22 @@
+package algorithms.gameTheory;
+
+import java.util.Scanner;
+
+public class PokerNim {
+    public static void main(String[] args) {
+    	Scanner in = new Scanner(System.in);
+    	int T = in.nextInt();
+    	
+    	for (int i=0; i<T; i++) {
+    		int pileNbr = in.nextInt();
+    		int k = in.nextInt();
+    		int[] piles = new int[pileNbr];
+    		for (int n=0; n<pileNbr; n++) {
+    			piles[n] = in.nextInt();
+    		}
+    		
+    		
+    	}
+    	in.close();
+    }
+}

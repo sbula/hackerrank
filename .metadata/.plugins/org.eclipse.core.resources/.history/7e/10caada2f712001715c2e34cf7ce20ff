@@ -1,0 +1,42 @@
+package daysOfStatistics;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class BinomialDistributionI {
+    private static DecimalFormat df3 = new DecimalFormat(".###");
+    private static int kidsCount = 6;
+
+    public static void main(String[] args) {
+    	Scanner in = new Scanner(System.in);
+    	double ratioPart1 = in.nextDouble();
+    	double ratioPart2 = in.nextDouble();
+    	in.close();
+
+  //  	double probaBoy = ratioPart1 / (ratioPart1+ratioPart2);
+    	double probaGirl = ratioPart1 / (ratioPart1+ratioPart2);
+    	
+    	double girlRes = 0;
+    	for (int i=0; i<3; i++) {
+    		girlRes += (Math.pow(probaGirl, kidsCount-i) * permut(kidsCount, i));
+    	}
+    	
+    	System.out.println(df3.format(1-girlRes));
+    }
+    
+    
+    
+    private static double permut(int n, int r) {
+    	long divident = 1, divisor = 1;
+    	int low = (r>n/2) ? n-r : n;
+    	int up = (r>n/2) ? n : n-r;
+    	for (int i=up; i<=n; i++) {
+    		divident *= i;
+    	}
+    	for (int i=1; i<=low; i++) {
+    		divisor *= i;
+    	}
+    	return (double)divident / (double)divisor;
+    }
+    
+}

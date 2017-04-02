@@ -1,0 +1,29 @@
+package algorithms.sorting;
+
+import java.util.Scanner;
+
+public class LilisHomework {
+	private static class Linker {
+		final int value;
+		final int origIndex;
+		int sortAsc;
+		int sortDesc;
+		public Linker(int value, int origIndex) {
+			this.value = value;
+			this.origIndex = origIndex;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		Linker[] origArr = new Linker[N];
+		for(int i=0; i<N; i++){
+			origArr[i]=new Linker(in.nextInt(), i); 
+		}
+		in.close();
+		
+		
+	}
+}

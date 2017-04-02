@@ -1,0 +1,14 @@
+package algorithms.dynamicProgramming;
+
+import java.util.Scanner;
+
+public class Equal {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int sampleCount = in.nextInt();
+        for (int i=0; i<sampleCount; i++) {
+        	
+        }
+        in.close();
+    }
+}

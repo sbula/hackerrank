@@ -1,0 +1,15 @@
+package dataStructures.arrays;
+
+import java.util.Scanner;
+
+public class Tmp {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String A = in.next();
+        String B = in.next();
+        in.close();
+        
+        System.out.println(A.length() + B.length());
+        System.out.println(A.compareTo(B)>0 ? "Yes" : "No");
+    }
+}

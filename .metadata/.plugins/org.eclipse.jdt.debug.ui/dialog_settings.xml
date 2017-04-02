@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="conditionHistory">
+		<item value="3" key="conditionHistoryEntryCount"/>
+		<item value="(diff &lt;= 2* maxAvailable)" key="conditionHistoryEntry_0"/>
+		<item value="diff &lt; 2* maxAvailable" key="conditionHistoryEntry_1"/>
+		<item value="root.val == 4" key="conditionHistoryEntry_2"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="200" key="SashWeightTree"/>
+		<item value="200" key="SashWeightDetails"/>
+		<item value="744" key="WIDTH"/>
+		<item value="599" key="HEIGHT"/>
+	</section>
+</section>
